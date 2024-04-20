@@ -1,0 +1,158 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --color0-5:#c0e7ef;
+    --color1:#caf0f8;
+    --color2:#90e0ef;
+    --color3:#00b4d8;
+    --color4:#0077b6;
+    --color5:#03045e;
+    --color6:#41a0df;
+    /* #00BFFF */
+    /* #1E90FF */
+    /* #87CEFA */
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62,5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.fa-chevron-down{
+    font-size: 12px;
+}
+.div-user.open{
+    display: flex;
+}
+.div-log.open{
+    display: flex;
+}
+.show-doctor-inf.open{
+    display: flex;
+}
+@keyframes animationIfUser{
+    from{
+        transform: translateY(-300px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@keyframes makeColor {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.okMoveLeft{
+    transform: translateX(-266%);
+    transition: transform .6s ease;
+}
+.okMoveRight{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+.bgrMoveLeft{
+    transform: translateX(-53%);
+    transition: transform .6s ease;
+}
+.bgrMoveRight{
+    transform: translateX(0);
+    transition: transform .6s ease;
+}
+.row {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.btn {
+    background-color: #000;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}

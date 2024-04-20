@@ -1,0 +1,536 @@
+body{
+    background-color: var(--white-color);
+    display: block;
+    position: relative;
+}
+.header .nav-header nav{
+    z-index: 999;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding:0 20px;
+    display: flex;
+    background-color: #2257c9;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.header li{
+    color: azure;
+}
+.header .nav-header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-header .nav-center li{
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.nav-header .nav-right button{
+    padding:10px 20px;
+    margin: 0 5px;
+    border: 1px solid var(--color5);
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.nav-header .nav-right .login{
+    background-color: var(--color3);
+    color: var(--color1);
+}
+.nav-header .nav-right .signin{
+    background-color: var(--color4);
+    color: var(--color1);
+}
+.nav-header .nav-right .open-if-user{
+    cursor: pointer;
+    background-color: var(--color3);
+}
+.banner-show{
+    margin-top: 51px;
+    overflow: hidden;
+    position: relative;
+}
+.list-banner{
+    position: relative;
+    display: flex; /* Sử dụng flexbox để căn giữa ảnh */
+    transform: translateX();
+    transition: 0.5s;
+}
+.list-banner img {
+    width: 100%;
+    height: 100%;
+}
+.banner-show .btn{
+    display: flex;
+    position: absolute; 
+    top:33%;
+    font-size: 50px;
+    color: #999999d0;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+.banner-show .btn-left{
+    left: 0px;
+}
+.banner-show .btn-right{
+    right: 0px;
+}
+.banner-show .btn:hover{
+    color: rgba(0, 0, 0, 0.489);
+}
+/* css thông tin user */
+.view-user{
+    animation: animationIfUser ease .5s;
+}
+.show-on{
+    background: linear-gradient(0deg,var(--color2),var(--color3),var(--color1));
+    position: absolute;
+    top: 20%;
+    transform:translateX(45%);
+    width: 800px;
+    height: 500px;
+    background-color: var(--color1);
+    padding-top: 20px;
+    border-radius: 30px;
+    border: 2px solid var(--color4);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+.show-on h1{
+    display:flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.show-on nav{
+    display: flex;
+}
+.show-on .img-user{
+    display: flex;
+    background: linear-gradient(0deg,var(--color0-5),var(--color1));
+    margin: 0 30px;
+    padding: 0 30px;
+    border: 2px solid var(--color4);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+.show-on .img-user img{
+    width: 200px;
+    height: auto;
+    padding-top: 40px;
+}
+.show-on .text-user li{
+    font-size: 17px;
+    margin: 15px 0;
+}
+.show-on .text-user u{
+    text-decoration: none;
+}
+.faint{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    margin-top: 50px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.show-on .fa-xmark{
+    position: absolute;
+    top:0;
+    right:0;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: #999999;
+    cursor: pointer;
+}
+.show-on .fa-xmark:hover{
+    color: black;
+    font-size: 30px;
+}
+.div-user{
+    display: none;
+}
+/* css login signout */
+.div-log{
+    display: none
+}
+.background-log{
+    animation: animationIfUser ease .5s;
+    position: fixed;
+    top:-70px;
+    width: 100%;
+    height: 120vh;
+    backdrop-filter: blur(10px);
+    /* background: linear-gradient(45deg,var(--color0-5),var(--color3),var(--color1),var(--color4),var(--color2),var(--color5));
+    background-size: 300% 300%;
+    animation: makeColor 12s ease-in-out infinite; */
+}
+.frame-log{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    transform:translateX(25%);
+    top: 20%;
+    border-radius: 10px;
+    border: 1px solid ;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    overflow: hidden;
+}
+.backgroundAnimation{
+    position: absolute;
+    margin-left: 528px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg,var(--color1),var(--color6),var(--color6),var(--color6),var(--color6),var(--color6),var(--color6),var(--color6),var(--color6),var(--color1));
+}
+.frame-log .nav-left{
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(90deg,var(--color1),var(--color1),var(--color1),var(--color1),var(--color1),#158fe1);
+}
+.frame-log .nav-left ul{
+    margin-left: 20px;
+    width: 70%;
+}
+.frame-log .nav-left .name-web{
+    margin: 110px 0;
+}
+.frame-log .nav-left h1{
+    margin-bottom: 5px;
+}
+.frame-log .nav-left .welcome-web{
+    margin-top: 5px;
+}
+.frame-log .nav-left i{
+    font-size: 20px;
+    margin: 10px 5px;
+}
+.ok{
+    margin-left: 520px;
+    margin-right: 100px;
+    height: 100%;
+    display: flex;
+}
+.ok1{
+    margin: 0 58px;
+}
+.ok2{
+    margin: 0 100px;
+    display: flex;
+}
+.frame-log .nav-left .icon-log-left{
+    margin: 10px 0;
+}
+.frame-log .nav-right{
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+.frame-log .nav-right .frame-nav-right{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 50px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.frame-log .close-log i{
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    color: #3b3b3b;
+    right: 15px;
+    z-index: 9999;
+}
+.frame-log .close-log i:hover{
+    color: black;
+}
+.frame-log .frame-nav-right h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0;
+}
+.h2Signin {
+    position: absolute;
+    width: 100%;
+    transform: translateX(153px);
+    font-size: 40px !important;
+    margin: -12px 0 !important;
+}
+.frame-log .frame-nav-right .input-box{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid  rgba(0, 0, 0, 0.9);
+    margin: 30px 0;
+}
+.frame-log .frame-nav-right .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    padding: 0 20px;
+}
+.frame-log .frame-nav-right .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.frame-log .frame-nav-right .input-box input:focus~label,
+.frame-log .frame-nav-right .input-box input:valid~label{
+    top:-6px;
+}
+.frame-log .frame-nav-right .input-box .icon{
+    position: absolute;
+    right: 0;
+    top:15px;
+    font-size: 20px;
+}
+.remember-fogot{
+    font-size: 14.5px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-fogot label input{
+    cursor: pointer;
+    accent-color: rgba(0, 0, 0, 0.5);
+    margin-right: 3px;
+}
+.remember-fogot a{
+    color: rgba(255, 255, 255, 0.868);
+    text-decoration: none;
+}
+.remember-fogot a:hover{
+    text-decoration: underline;
+}
+.frame-log .frame-nav-right .btn{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.868);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}.frame-log .frame-nav-right .btn.btn-signin{
+    position: absolute;
+    transform: translateX(40%);
+}
+.frame-log .frame-nav-right .login-register{
+    font-size: 14.5px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+.frame-log .frame-nav-right .login-register2{
+    margin-top: -15px;
+}
+.frame-log .frame-nav-right .login-register p a{
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.868);
+}
+.frame-log .frame-nav-right .login-register p a:hover{
+    text-decoration: underline;
+}
+.frame-nav-right.frame-nav-right2 {
+    margin-top: 44px !important;    
+}
+/* list_doctor */
+.booking-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.booking-container h1{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 50px;
+}
+
+.booking-container .list-doctor{
+    width: 5400px;
+    height: 50%;
+    display: flex;
+    transform: translateX(-1947px);
+    transition: 0.5s;
+}
+.booking-container .left-doctor{
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 13%;
+    cursor: pointer;
+}
+.booking-container .right-doctor{
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    height: 50%;
+    width: 13%;
+    cursor: pointer;
+}
+.booking-container .div-doctor{
+    height: 100%;
+    width: 300px;
+    margin: 0 30px;
+    background-color: #9ed2f3;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border: 1px solid var(--color5);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.booking-container .div-doctor:hover{
+    transform: scale(1.2);
+}
+.booking-container .div-doctor img{
+    display: block;
+    margin: auto;
+}
+.booking-container .div-doctor h3{
+    margin: 5px 0;
+}
+.booking-container .div-doctor p{
+    margin: 10px 0;
+}
+.booking-container .div-doctor button{
+    width: 30%;
+    height: 37px;
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.868);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.booking-container .div-doctor button:hover{
+    background-color: var(--color4);
+}
+.show-doctor-inf{
+    position: fixed;
+    top :0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(252, 252, 252);
+    display: none;
+}
+.show-doctor-inf .left-show-doctor{
+    margin-top: 50px;
+    width: 70%;
+    height: 100%;
+    margin-right: 50px;
+    text-align: center;
+}
+.show-doctor-inf .left-show-doctor img{
+    margin-top: 100px;
+    margin-bottom: 35px;
+    transform: scale(1.4);
+}
+.show-doctor-inf .left-show-doctor button{
+    margin: 20px;
+    width: 250px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.868);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.show-doctor-inf .left-show-doctor button:hover{
+    color: aliceblue;
+    background-color: #2257c9;
+}
+.show-doctor-inf .right-show-doctor{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+.show-doctor-inf .right-show-doctor h2{
+    font-size: 50px;
+}
+.show-doctor-inf .right-show-doctor p{
+    font-size: 17px;
+}
+.show-doctor-inf .right-show-doctor h3{
+    font-size: 23px;
+}
+.show-doctor-inf .right-show-doctor ul{
+    list-style-type: disc;
+}
+.right-if-booking {
+    position: absolute;
+    height: 1000px;
+}
+.right-if-booking .booking{
+    margin-left: 150px;
+}
+.right-if-booking .input-box-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+.right-if-booking .input-box-container .input-box{
+    display:grid;
+    width: 350px;
+    height: 110px;
+}
+.right-if-booking .input-box-container .input-box label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right-if-booking .input-box-container .input-box i{
+display: none;
+}
+.right-if-booking .describe{
+    display: grid;
+    margin-right: 100px;
+}
+.right-if-booking .describe label{
+    font-weight: 500;
+    font-size: 20px;
+}
+.right-if-booking .describe input{
+    margin-top: 10px;
+    height: 130px;
+    width: 100%;
+}
+.confirm-booking{
+    margin-top: 20px;
+    height: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.confirm-booking:hover{
+    color: aliceblue;
+    background-color: #2257c9;
+}

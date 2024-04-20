@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="./css/doctor.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Bác sĩ - Đăng ký lịch làm việc</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1><img src="./img/logo.png" alt="">DOCTOR'S SCHEDULE MANAGEMENT</h1>
+  </div>
+
+  <div class="button">
+    <button class="js-box1 box text-center">
+      <div class="box-content">
+        <i class="fa-solid fa-calendar-days"></i>
+        Register your work schedule
+      </div>
+    </button>
+
+    <button onclick="window.location.href='patientsList.html'" class="js-box2 box text-center">
+      <div class="box-content">
+        <i class="fa-solid fa-suitcase-medical"></i>
+        Patient's List
+      </div>
+    </button>
+  </div>
+
+  <div class="js-modal modal schedule">
+    <div class="modal-container js-modal-container">
+      <div class="js-modal-close modal-close">
+        <i class="fa-regular fa-circle-xmark fa-xl"></i>
+      </div>
+
+      <header class="modal-header">
+        Work Schedule
+      </header>
+
+      <div class="modal-body">
+        <div class="scheduleForm">
+          <div class="monday day">
+            <label>
+              <input type="checkbox" name="monday">
+              <span>Monday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="monday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="monday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="monday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="monday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+          <div class="tuesday day">
+            <label>
+              <input type="checkbox" name="tuesday">
+              <span>Tuesday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="tuesday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="tuesday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="tuesday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="tuesday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+          <div class="wednesday day">
+            <label>
+              <input type="checkbox" name="wednesday">
+              <span>Wednesday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="wednesday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="wednesday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="wednesday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="wednesday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+          <div class="thursday day">
+            <label>
+              <input type="checkbox" name="thursday">
+              <span>Thursday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="thursday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="thursday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="thursday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="thursday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+          <div class="friday day">
+            <label>
+              <input type="checkbox" name="friday">
+              <span>Friday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="friday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="friday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="friday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="friday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+          <div class="saturday day">
+            <label>
+              <input type="checkbox" name="saturday">
+              <span>Saturday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="saturday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="saturday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="saturday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="saturday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+          <div class="sunday day">
+            <label>
+              <input type="checkbox" name="sunday">
+              <span>Sunday</span>
+            </label>
+            <label class="morning shift">
+              <input type="radio" name="sunday_shift" value="morning">
+              <span>Morning</span>
+            </label>
+            <label class="afternoon shift">
+              <input type="radio" name="sunday_shift" value="afternoon">
+              <span>Afternoon</span>
+            </label>
+            <label class="evening shift">
+              <input type="radio" name="sunday_shift" value="evening">
+              <span>Evening</span>
+            </label>
+            <label class="allday shift">
+              <input type="radio" name="sunday_shift" value="allday">
+              <span>All Day</span>
+            </label>
+          </div>
+
+        </div>
+
+        <p> Morning: 7h00 - 11h00;
+          Afternoon: 13h00 - 17h00;
+          Evening: 19h00 - 22h00
+        </p>
+        <div class="modal-footer">
+          <button id="day-uncheck">
+            <i class="fa-solid fa-x"></i>
+            Cancel selection
+          </button>
+          <button id="day-change">
+            <i class="fa-regular fa-pen-to-square"></i>
+            Change selection
+          </button>
+          <button id="day-confirm">
+            <i class="fa-solid fa-check"></i>
+            CONFIRM
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="custom-alert">
+      <p id="custom-alert-message"></p>
+    </div>
+
+
+
+    <script src="js/doctor.js"></script>
+
+
+</body>
+
+</html>
