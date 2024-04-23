@@ -4,144 +4,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/doctor.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/patientsList.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="css/doctor_main.css">
+  <link rel="stylesheet" href="css/doctor.css">
+  <link rel="stylesheet" href="css/patientsList.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Bác sĩ - Đăng ký lịch làm việc</title>
+  <title>ADMIN - DOCTOR</title>
 </head>
 
 <body>
-  <div class="header">
-    <h1><img src="./img/logo.png" alt="">DOCTOR'S SCHEDULE MANAGEMENT</h1>
-  </div>
-  <div class="name">PATIENT'S LIST</div>
-
-  <div class="patient-list">
-    <table class="table">
-      <thead class="thead">
-        <tr>
-          <th>Name</th>
-          <th>Gender</th>
-          <th>Age</th>
-          <th>Phone Number</th>
-          <th>Address</th>
-          <th>Diagnosis</th>
-          <th>Time</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Hoàng Thanh Việt</td>
-          <td>Male</td>
-          <td>20</td>
-          <td>0815696856</td>
-          <td>Quảng Bình</td>
-          <td>Đau bụng</td>
-          <td> <p><time datetime="2024-19-04T8:00"></time></p>  </td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Hoàng Thanh Việt</td>
-          <td>Male</td>
-          <td>20</td>
-          <td>0815696856</td>
-          <td>Quảng Bình</td>
-          <td>Đau bụng</td>
-          <td> Morning 20/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Hoàng Thanh Việt</td>
-          <td>Male</td>
-          <td>20</td>
-          <td>0815696856</td>
-          <td>Quảng Bình</td>
-          <td>Đau bụng</td>
-          <td> Morning 20/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-        <tr>
-          <td>Mark Zuckerberg</td>
-          <td>Male</td>
-          <td>33</td>
-          <td>0777712777</td>
-          <td>America</td>
-          <td>Đại tràng</td>
-          <td> Morning 30/4/2024</td>
-          <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
-          <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
-        </tr>
-      </tbody>
-    </table>
-
+  <div id="left-sidebar" class="sidebar">
+    <div class="user-inf">
+      <div class="adm-img">
+        <img src="./img/admin.jpg" alt="">
+      </div>
+      <div class="adm-act-inf">
+        <span>Welcome</span>
+        <h3>Dr. Alejandro</h3>
+        <ul>
+          <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-right-from-bracket"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu" id="menu-bar">
+      <div class="nav">
+        <div>
+          <ul class="class-list">
+            <a href="doctor_main.html" class="nav-link act">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-text">Dashboard</span>
+            </a>
+            <a href="#" class="nav-link act" id="scheduleOpen">
+              <i class="fa-regular fa-calendar-days"></i>
+              <span class="nav-text">Doctor Schedule</span>
+            </a>
+            <a href="#" class="nav-link act">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span class="nav-text">Doctors</span>
+            </a>
+            <a href="patientsList.html" class="nav-link act">
+              <i class="fa-solid fa-hospital-user"></i>
+              <span class="nav-text">Patients</span>
+            </a>
+            <a href="#" class="nav-link act">
+              <i class="fa-solid fa-flag"></i>
+              <span class="nav-text">Report</span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 
+  <div class="section-content">
+    <div class="name">PATIENT'S LIST</div>
 
+    <div class="patient-list">
+      <table class="table">
+        <thead class="thead">
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Diagnosis</th>
+            <th>Time</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>Hoàng Thanh Việt</td>
+            <td>Male</td>
+            <td>20</td>
+            <td>0815696856</td>
+            <td>Quảng Bình</td>
+            <td>Đau bụng</td>
+            <td>
+              <p><time datetime="2024-19-04T8:00"></time></p>
+            </td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Hoàng Thanh Việt</td>
+            <td>Male</td>
+            <td>20</td>
+            <td>0815696856</td>
+            <td>Quảng Bình</td>
+            <td>Đau bụng</td>
+            <td> Morning 20/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Hoàng Thanh Việt</td>
+            <td>Male</td>
+            <td>20</td>
+            <td>0815696856</td>
+            <td>Quảng Bình</td>
+            <td>Đau bụng</td>
+            <td> Morning 20/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></i></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+          <tr>
+            <td>Mark Zuckerberg</td>
+            <td>Male</td>
+            <td>33</td>
+            <td>0777712777</td>
+            <td>America</td>
+            <td>Đại tràng</td>
+            <td> Morning 30/4/2024</td>
+            <td><button class="acp-btn btn"><i class="fa-solid fa-check"></button></td>
+            <td><button class="rej-btn btn"><i class="fa-solid fa-trash-can"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
 
+    </div>
+  </div>
+  <script src="js/doctor_main.js"></script>
   <body>
+    

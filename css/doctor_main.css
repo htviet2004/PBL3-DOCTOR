@@ -1,0 +1,209 @@
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: san system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --first-color: #007bff;
+    --second-color: rgb(0, 157, 255);
+}
+/* 1. Từ ngoài vào trong
+2. Từ trên xuống dưới */
+
+/* Vị trí, kích thước, màu sắc, kiểu dáng */
+
+.row {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.btn {
+    background-color: #000;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+
+body {
+    margin: 0;
+    padding: 1rem 0 0 5rem;
+    background-color: #fff;
+    transition: 0.5s;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100vh;
+    background-color: var(--first-color);
+    transition: 0.5s;
+    padding: 1.25rem .5rem 2rem;
+}
+
+.sidebar .user-inf {
+    padding: 13px 10px 12px 10px;
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    width: 100%;
+    background: rgb(255, 138, 49);
+    border-radius: 15px;
+}
+
+.sidebar .user-inf .adm-img{
+    width: 72px;
+    height: 72px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.sidebar .user-inf .adm-img img {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.sidebar .user-inf .adm-act-inf {
+    display: table-cell;
+    padding-left: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.sidebar .user-inf .adm-act-inf>ul {
+    float: left;
+    list-style: outside none none;
+    margin: 5px 0 0 -5px;
+    padding: 0;
+}
+.sidebar .user-inf .adm-act-inf>ul li {
+    float: left;
+    margin-right: 1px;
+}
+
+.sidebar .user-inf .adm-act-inf>ul li a {
+    color: #fff;
+    float: left;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    width: 29px;
+}
+
+.menu .nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+.menu .nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu .nav .nav-link:hover{
+    background: #fff;
+    color: #000;
+
+}
+
+.menu .nav .class-list i {
+    font-size: 1.5rem;
+    margin-right: .75rem;
+}
+
+.menu .nav .nav-text {
+    font-weight: 700;
+}
+
+.section-content {
+    border-radius: 3px;
+    padding: 15px;
+    position: relative;
+    margin: 0px 0px 15px 250px;
+}
